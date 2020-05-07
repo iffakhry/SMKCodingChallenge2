@@ -1,5 +1,6 @@
 package id.smkcoding.smkcodingchallenge2
 
+import android.content.Context
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
@@ -19,6 +20,7 @@ class ViewPagerAdapter(fragmentActivity: FragmentActivity) : FragmentStateAdapte
         when (position) {
             0 -> { return MyFriendsFragment() }
             1 -> { return GithubFragment() }
+            2 -> { return ProfilFragment() }
             else -> {
                 return GithubFragment()
             }
